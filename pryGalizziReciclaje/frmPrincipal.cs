@@ -31,12 +31,12 @@ namespace pryGalizziReciclaje
         private TimeSpan tiempoAcumulado; // Acumula el tiempo total de sesión
 
         private void frmPrincipal_Load(object sender, EventArgs e)
-        {   
+        {
             #region Mostrar al usuario frmLogin antes que frmPrincipal
 
             //2. Se termina de instanciar la variable para que se pueda manipular el frmPrincipal dentro de frmLogin.
-            //formPrincipal = this;
-            //formPrincipal.Hide(); //3. Se oculta el frmPrincipal.
+            formPrincipal = this;
+            formPrincipal.Hide(); //3. Se oculta el frmPrincipal.
 
             //4. Se termina de instanciar la variable para manipular el timerSesion (Se habilitará dentro de frmLogin una vez logueado.)
             timerS = timerSesion;
