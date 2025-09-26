@@ -27,7 +27,7 @@ namespace pryGalizziReciclaje
         {
             conexion.cargarListaUsuarios(lstUsuarios);
             conexion.cargarListaTareas(lstTareas);
-
+            dtpFecha.MaxDate = DateTime.Now;
             dtpFecha.Value = DateTime.Now;
             controlEnPantalla = cmbSeleccionarDato;
 
